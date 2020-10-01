@@ -1,6 +1,6 @@
 ﻿namespace Quan_Ly_HS_GV_THPT
 {
-     partial class Form1
+     partial class frm_Start
      {
           /// <summary>
           /// Required designer variable.
