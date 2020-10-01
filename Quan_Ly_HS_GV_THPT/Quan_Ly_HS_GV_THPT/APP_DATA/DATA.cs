@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace QuanLyTHPT.APP_DATA
+namespace Quan_Ly_HS_GV_THPT.APP_DATA
 {
    public class DATA
     {
