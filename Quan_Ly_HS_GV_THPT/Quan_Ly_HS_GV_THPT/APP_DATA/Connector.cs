@@ -5,7 +5,7 @@ using System.Text;
 using System.Configuration;
 using System.Threading.Tasks;
 
-namespace QuanLyTHPT.APP_DATA
+namespace Quan_Ly_HS_GV_THPT.APP_DATA
 {
    public class Connector
     {
