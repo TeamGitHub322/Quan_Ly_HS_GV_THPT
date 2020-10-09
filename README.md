@@ -9,15 +9,15 @@ Thành viên:
 2.2	Thiết kế giao diện cửa sổ chính (màn hình đăng nhập, các menu trỏ đến các module con,…). Xây dựng module quản lý người dùng	(Diện)
 2.3	Xây dựng module thêm học sinh mới	(Duy Linh)
 2.4	Xây dựng module sửa thông tin học sinh	(Duy Linh)
-2.5	Xây dựng module xóa thông tin học sinh	(Hoàng)
-2.5	Xây dựng module tìm kiếm học sinh	(Hoàng)
+2.5	Xây dựng module xóa thông tin học sinh	Duy Linh
+2.5	Xây dựng module tìm kiếm học sinh	Duy Linh
 2.7	Xây dựng module thêm giáo viên mới	(Bình)
 2.8	Xây dựng module sửa thông tin giáo viên	(Bình)
-2.9	Xây dựng module xóa thông tin giáo viên	(Ngọc Anh)
-2.10	Xây dựng module tìm kiếm giáo viên	(Ngọc Anh)
+2.9	Xây dựng module xóa thông tin giáo viên	(Bình)
+2.10	Xây dựng module tìm kiếm giáo viên	(Bình)
 2.11	Xây dựng module quản lý thông tin giảng dạy (thêm, sửa, xóa, tìm kiếm)	(Việt)
-2.12	Xây dựng module hướng dẫn sử dụng phần mềm (menu Help, F1) chi tiết đến từng chức năng	(Việt)
-2.13	Xây dựng tài liệu hướng dẫn cài đặt, vận hành	(Diện)
+2.12	Xây dựng module hướng dẫn sử dụng phần mềm (menu Help, F1) chi tiết đến từng chức năng	(Ngọc Anh)
+2.13	Xây dựng tài liệu hướng dẫn cài đặt, vận hành	(Ngọc Anh)
 2.14	Ghép nối các module để nhận được phần mềm hoàn chỉnh	(Ngọc Anh-Việt)
 2.15	Chạy kiểm thử phần mềm kết quả	(Diện)
 
