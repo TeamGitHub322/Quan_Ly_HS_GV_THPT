@@ -7,6 +7,7 @@ using System.Data;
 using System.Collections;
 using System.Data.SqlClient;
 using Quan_Ly_HS_GV_THPT.APP_DATA;
+using System.Windows.Forms;
 
 namespace Quan_Ly_HS_GV_THPT.GIAOVIENDATA
 {
@@ -40,21 +41,21 @@ namespace Quan_Ly_HS_GV_THPT.GIAOVIENDATA
         }
         public void UpdateGV(List<String> GV)
         {
-            CHECK = 0;
-            base.sql = "UPDATEGIAOVIEN";
-            SP_DATA();
-            GAN_GV(GV);
-            check();
-
+               //CHECK = 0;
+               //base.sql = "UPDATEGIAOVIEN";
+               //SP_DATA();
+               //GAN_GV(GV);
+               //check();
+               
         }
         public void DeleteGV(string ID)
         {
-            base.sql = "DELETEGIAOVIEN";
-            SP_DATA();
-            cmd.Parameters.AddWithValue("@ID", ID);
-            cmd.ExecuteNonQuery();
-            cmd.Dispose();
-            con.Close();
+            //base.sql = "DELETEGIAOVIEN";
+            //SP_DATA();
+            //cmd.Parameters.AddWithValue("@ID", ID);
+            //cmd.ExecuteNonQuery();
+            //cmd.Dispose();
+            //con.Close();
         }
 
        
