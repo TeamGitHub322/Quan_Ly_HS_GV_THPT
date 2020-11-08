@@ -28,5 +28,32 @@ namespace Quan_Ly_HS_GV_THPT.HOCSINHDATA
             
         }
 
-        
+        public void InsertHS(List<string> HS)
+        {
+            CHECK = 0;
+            base.sql = "INSERTHOCSINH";
+            SP_DATA();
+            GAN_HS(HS);
+            check();
+
+        }
+        public void UpdateHS(List<String> HS)
+        {
+            CHECK = 0;
+            base.sql = "UPDATEHOCSINH";
+            SP_DATA();
+            GAN_HS(HS);
+            check();
+
+        }
+
+        public void DeleteHS(string ID)
+        {
+            base.sql = "DELETEHOCSINH";
+            SP_DATA();
+            cmd.Parameters.AddWithValue("@ID", ID);
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            con.Close();
+        }
 }
