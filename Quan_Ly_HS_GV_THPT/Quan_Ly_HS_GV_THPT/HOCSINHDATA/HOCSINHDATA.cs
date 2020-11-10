@@ -56,4 +56,40 @@ namespace Quan_Ly_HS_GV_THPT.HOCSINHDATA
             cmd.Dispose();
             con.Close();
         }
+
+        public DataTable TK_THONGTIN_MA(string LISTHS)
+        {
+            base.sql = "TK_THONGTIN_MA";
+
+            SqlDataAdapter sql1 = new SqlDataAdapter(sql, con);
+            sql1.SelectCommand.CommandType = CommandType.StoredProcedure;
+            sql1.SelectCommand.Parameters.AddWithValue("@ID", LISTHS);
+            sql1.SelectCommand.Parameters.Add("@CHECK", SqlDbType.Int).Direction = ParameterDirection.Output;
+            sql1.SelectCommand.ExecuteNonQuery();
+            CHECK = Convert.ToInt16(sql1.SelectCommand.Parameters["@CHECK"].Value);
+            DataTable dt = new DataTable();
+            sql1.Fill(dt);
+            sql1.Dispose();
+            return dt;
+
+
+        }
+        public DataTable TK_THONGTIN_TEN(string LISTHS)
+        {
+            base.sql = "TK_THONGTIN_TEN";
+
+            SqlDataAdapter sql1 = new SqlDataAdapter(sql, con);
+            sql1.SelectCommand.CommandType = CommandType.StoredProcedure;
+            sql1.SelectCommand.Parameters.AddWithValue("@NAME", LISTHS);
+            sql1.SelectCommand.Parameters.Add("@CHECK", SqlDbType.Int).Direction = ParameterDirection.Output;
+            sql1.SelectCommand.ExecuteNonQuery();
+            CHECK = Convert.ToInt16(sql1.SelectCommand.Parameters["@CHECK"].Value);
+            DataTable dt = new DataTable();
+            sql1.Fill(dt);
+            sql1.Dispose();
+            return dt;
+
+
+        }
+    }
 }
