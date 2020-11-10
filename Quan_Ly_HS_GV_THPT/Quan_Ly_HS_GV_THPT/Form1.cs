@@ -24,12 +24,20 @@ namespace Quan_Ly_HS_GV_THPT
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            LOPDATA.frmLop frm = new LOPDATA.frmLop();
+            frm.ShowDialog();
+            frm.Close();
+            frm.Dispose();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            HOCSINHDATA.frmHocSinh frm = new HOCSINHDATA.frmHocSinh();
+            frm.ShowDialog();
+            frm.Close();
+            frm.Dispose();
         }
 
         private void button3_Click(object sender, EventArgs e)
