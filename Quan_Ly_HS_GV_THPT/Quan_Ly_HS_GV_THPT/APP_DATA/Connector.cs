@@ -9,6 +9,7 @@ namespace Quan_Ly_HS_GV_THPT.APP_DATA
 {
    public class Connector
     {
+        //thay đổi connector về database
        public Connector() { }
        public String getconnect()
        {

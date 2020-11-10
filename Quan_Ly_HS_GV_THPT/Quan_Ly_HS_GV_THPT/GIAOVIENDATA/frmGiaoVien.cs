@@ -58,7 +58,7 @@ namespace Quan_Ly_HS_GV_THPT.GIAOVIENDATA
             row[4] = TEACHER[4];
             row[5] = TEACHER[5];
             row[6] = TEACHER[6];
-            row[7] = TEACHER[7];
+            //row[7] = TEACHER[7];
             //  cell.Value = CLASS[0];
             //row.Cells.Add(cell);
 
@@ -73,7 +73,7 @@ namespace Quan_Ly_HS_GV_THPT.GIAOVIENDATA
 
             tbx_SDT.Text = DGVGV.SelectedRows[0].Cells[3].Value.ToString();
             tbx_NAME.Text = DGVGV.SelectedRows[0].Cells[2].Value.ToString();
-            tbx_DATE.Text = DGVGV.SelectedRows[0].Cells[8].Value.ToString();
+            //tbx_DATE.Text = DGVGV.SelectedRows[0].Cells[8].Value.ToString();
             tbx_ID.Text = DGVGV.SelectedRows[0].Cells[1].Value.ToString();
             tbx_EMAIL.Text = DGVGV.SelectedRows[0].Cells[4].Value.ToString();
             tbx_SEX.Text = DGVGV.SelectedRows[0].Cells[5].Value.ToString();
@@ -85,14 +85,18 @@ namespace Quan_Ly_HS_GV_THPT.GIAOVIENDATA
         {
             ADD_LIST();
             teacher.UpdateGV(TEACHER);
-            if (CHECK_ERROR() == 0)
-            {
-                for (int i = 1; i < DGVGV.ColumnCount; i++)
-                {
-                    DGVGV.SelectedRows[0].Cells[i].Value = TEACHER[i - 1];
-                }
-            }
-            TEACHER.Clear();
+               //if (CHECK_ERROR() == 0)
+               //{
+               for (int i = 1; i < DGVGV.ColumnCount; i++)
+               {
+                    if (TEACHER[i - 1] != "")
+                    {
+                         DGVGV.SelectedRows[0].Cells[i].Value = TEACHER[i - 1];
+                    }
+                    
+               }
+          
+          TEACHER.Clear();
         }
         private void ADD_LIST()
         {
@@ -162,7 +166,10 @@ namespace Quan_Ly_HS_GV_THPT.GIAOVIENDATA
         {
             sua();
         }
+          private void btn_SEARCH_Click(object sender, EventArgs e)
+          {
+               MessageBox.Show("sdsd");
+          }
 
-
-    }
+     }
 }

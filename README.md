@@ -30,3 +30,8 @@ Thành viên:
 - Quy tắc làm việc:
 + Các thành viên trong nhóm hoàn thiện module của mình, commit lên repo và thông báo với trưởng nhóm nếu có lỗi phát sinh
 + Làm việc khẩn trương, nghiêm túc
+**************************************************************************************
+Khi thành viên clone về chạy chương trình thì sửa file config thành database của mình:(sửa Datasource)
+<connectionStrings>
+        <add name="Conn" connectionString="Data Source=DESKTOP-6DIRH3U\SQLEXPRESS02;Initial Catalog=QUAN_LY_NHAN_SU;user id=sa;password=123456;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False" providerName="System.Data.SqlClient" />
+    </connectionStrings>
