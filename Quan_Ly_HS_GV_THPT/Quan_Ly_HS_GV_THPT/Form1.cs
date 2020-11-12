@@ -52,6 +52,7 @@ namespace Quan_Ly_HS_GV_THPT
         private void button4_Click(object sender, EventArgs e)
         {
                this.Hide();
+               
                HUONGDAN.frmHuongDan frm = new HUONGDAN.frmHuongDan();
                frm.ShowDialog();
                frm.Close();

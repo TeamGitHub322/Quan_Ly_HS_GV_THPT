@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -69,6 +69,19 @@
       <DependentUpon>frmGiaoVien.cs</DependentUpon>
     </Compile>
     <Compile Include="GIAOVIENDATA\GIAOVIENDATA.cs" />
+    <Compile Include="HOCSINHDATA\frmHocSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HOCSINHDATA\frmHocSinh.Designer.cs">
+      <DependentUpon>frmHocSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HOCSINHDATA\HOCSINHDATA.cs" />
+    <Compile Include="HUONGDAN\frmHuongDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HUONGDAN\frmHuongDan.Designer.cs">
+      <DependentUpon>frmHuongDan.cs</DependentUpon>
+    </Compile>
     <!-- <Compile Include="GIAOVIENDATA\frmGiaoVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,12 +89,20 @@
       <DependentUpon>frmGiaoVien.cs</DependentUpon>
     </Compile>
     <Compile Include="GIAOVIENDATA\GIAOVIENDATA.cs" /> -->
-    <Compile Include="HUONGDAN\frmHuongDan.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HUONGDAN\frmHuongDan.designer.cs">
-      <DependentUpon>frmHuongDan.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="LOPDATA\frmLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOPDATA\frmLop.Designer.cs">
+      <DependentUpon>frmLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOPDATA\LOPDATA.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -90,11 +111,24 @@
     <EmbeddedResource Include="GIAOVIENDATA\frmGiaoVien.resx">
       <DependentUpon>frmGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
-    <!-- <EmbeddedResource Include="GIAOVIENDATA\frmGiaoVien.resx">
-      <DependentUpon>frmGiaoVien.cs</DependentUpon> -->
+    <EmbeddedResource Include="HOCSINHDATA\frmHocSinh.resx">
+      <DependentUpon>frmHocSinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HUONGDAN\frmHuongDan.resx">
       <DependentUpon>frmHuongDan.cs</DependentUpon>
     </EmbeddedResource>
+    <!-- <EmbeddedResource Include="GIAOVIENDATA\frmGiaoVien.resx">
+      <DependentUpon>frmGiaoVien.cs</DependentUpon> -->
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOPDATA\frmLop.resx">
+      <DependentUpon>frmLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Quan_Ly_HS_GV_THPT.frm_Start.resources" />
+    <EmbeddedResource Include="obj\Debug\Quan_Ly_HS_GV_THPT.GIAOVIENDATA.frmGiaoVien.resources" />
+    <EmbeddedResource Include="obj\Debug\Quan_Ly_HS_GV_THPT.HUONGDAN.frmHuongDan.resources" />
+    <EmbeddedResource Include="obj\Debug\Quan_Ly_HS_GV_THPT.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -105,7 +139,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="bin\Debug\Huong Dan\Giao Vien.mht" />
+    <None Include="bin\Debug\Huong Dan\Gioi thieu san pham.mht" />
+    <None Include="bin\Debug\Huong Dan\Hoc Sinh.mht" />
+    <None Include="bin\Debug\Huong Dan\Lop.mht" />
+    <None Include="bin\Debug\Huong Dan\Nhom thuc hien.mht" />
+    <None Include="bin\Debug\Huong Dan\Quan Ly Chung.mht" />
+    <None Include="HOCSINHDATA\Thumbs.db" />
     <None Include="Images\Thumbs.db" />
+    <None Include="LOPDATA\Thumbs.db" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Quan_Ly_HS_GV_THPT.csproj.CopyComplete" />
+    <None Include="obj\Debug\Quan_Ly_HS_GV_THPT.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Quan_Ly_HS_GV_THPT.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\Quan_Ly_HS_GV_THPT.csprojAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,12 +168,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HOCSINHDATA\student 2.png" />
     <Content Include="Icons\QLTHPT.ico" />
     <Content Include="Images\classroom.jpg" />
     <Content Include="Images\guide.png" />
     <Content Include="Images\QuanLyTHPT.jpg" />
     <Content Include="Images\student 2.png" />
     <Content Include="Images\teacher.png" />
+    <Content Include="LOPDATA\classroom.jpg" />
+    <Content Include="obj\Debug\Quan_Ly_HS_GV_THPT.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Quan_Ly_HS_GV_THPT.exe" />
+    <Content Include="obj\Debug\Quan_Ly_HS_GV_THPT.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <None Include="Resources\a660259e0ec5e8ce4e9927b96f8a7027.jpg" />
     <None Include="Resources\Science-Students-icon.png" />
     <None Include="Resources\10225-woman-teacher-light-skin-tone-icon.png" />

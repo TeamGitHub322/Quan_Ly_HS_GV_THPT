@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyTHPT.HOCSINHDATA
+namespace Quan_Ly_HS_GV_THPT.HOCSINHDATA
 {
     public partial class frmHocSinh : Form
     {
