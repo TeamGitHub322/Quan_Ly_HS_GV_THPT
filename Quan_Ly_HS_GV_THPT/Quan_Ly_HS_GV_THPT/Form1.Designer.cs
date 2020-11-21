@@ -43,21 +43,20 @@ namespace Quan_Ly_HS_GV_THPT
                this.button1.Image = global::Quan_Ly_HS_GV_THPT.Properties.Resources.classroom;
                this.button1.Location = new System.Drawing.Point(374, 1);
                this.button1.Name = "button1";
-               this.button1.Size = new System.Drawing.Size(130, 153);
+               this.button1.Size = new System.Drawing.Size(130, 142);
                this.button1.TabIndex = 0;
                this.button1.Text = "LỚP";
                this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
                this.button1.UseVisualStyleBackColor = true;
                this.button1.Click += new System.EventHandler(this.button1_Click);
-               
                // 
                // button2
                // 
                this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-               this.button2.Image = global::Quan_Ly_HS_GV_THPT.Properties.Resources.student_2;
+               this.button2.Image = global::Quan_Ly_HS_GV_THPT.Properties.Resources.bbtnQl_KhachHang_Glyph;
                this.button2.Location = new System.Drawing.Point(102, 1);
                this.button2.Name = "button2";
-               this.button2.Size = new System.Drawing.Size(130, 153);
+               this.button2.Size = new System.Drawing.Size(130, 142);
                this.button2.TabIndex = 1;
                this.button2.Text = "HỌC SINH";
                this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -67,10 +66,10 @@ namespace Quan_Ly_HS_GV_THPT
                // button3
                // 
                this.button3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-               this.button3.Image = global::Quan_Ly_HS_GV_THPT.Properties.Resources.teacher;
+               this.button3.Image = global::Quan_Ly_HS_GV_THPT.Properties.Resources.buttonItemTopHoSoNhanVien_Image;
                this.button3.Location = new System.Drawing.Point(238, 1);
                this.button3.Name = "button3";
-               this.button3.Size = new System.Drawing.Size(130, 153);
+               this.button3.Size = new System.Drawing.Size(130, 142);
                this.button3.TabIndex = 2;
                this.button3.Text = "GIÁO VIÊN";
                this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -80,24 +79,23 @@ namespace Quan_Ly_HS_GV_THPT
                // button4
                // 
                this.button4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-               this.button4.Image = global::Quan_Ly_HS_GV_THPT.Properties.Resources.guide;
+               this.button4.Image = global::Quan_Ly_HS_GV_THPT.Properties.Resources.buttonItemTopTimKiemHoSoTuyenDung_Image;
                this.button4.Location = new System.Drawing.Point(510, 1);
                this.button4.Name = "button4";
-               this.button4.Size = new System.Drawing.Size(130, 153);
+               this.button4.Size = new System.Drawing.Size(130, 142);
                this.button4.TabIndex = 3;
+               this.button4.Text = "Help";
                this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
                this.button4.UseVisualStyleBackColor = true;
                this.button4.Click += new System.EventHandler(this.button4_Click);
                // 
                // frm_Start
                // 
-               this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
-
-               this.components = new System.ComponentModel.Container();
+               this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
                this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
                this.BackgroundImage = global::Quan_Ly_HS_GV_THPT.Properties.Resources.QuanLyTHPT;
-               this.ClientSize = new System.Drawing.Size(751, 498);
+               this.ClientSize = new System.Drawing.Size(751, 462);
                this.Controls.Add(this.button4);
                this.Controls.Add(this.button3);
                this.Controls.Add(this.button2);
