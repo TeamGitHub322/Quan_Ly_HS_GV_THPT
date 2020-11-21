@@ -33,7 +33,6 @@
                System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
                System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGiaoVien));
                this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
-               this.pictureBox1 = new System.Windows.Forms.PictureBox();
                this.labelX8 = new DevComponents.DotNetBar.LabelX();
                this.labelX2 = new DevComponents.DotNetBar.LabelX();
                this.tbx_HH = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -64,13 +63,14 @@
                this.rd2 = new DevComponents.DotNetBar.RadialMenuItem();
                this.rd3 = new DevComponents.DotNetBar.RadialMenuItem();
                this.rd4 = new DevComponents.DotNetBar.RadialMenuItem();
+               this.pictureBox1 = new System.Windows.Forms.PictureBox();
                this.groupPanel1.SuspendLayout();
-               ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
                ((System.ComponentModel.ISupportInitialize)(this.tbx_DATE)).BeginInit();
                this.panelEx1.SuspendLayout();
                ((System.ComponentModel.ISupportInitialize)(this.DGVGV)).BeginInit();
                this.panelEx2.SuspendLayout();
                this.panelEx3.SuspendLayout();
+               ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
                this.SuspendLayout();
                // 
                // groupPanel1
@@ -131,15 +131,6 @@
                this.groupPanel1.TabIndex = 13;
                this.groupPanel1.Text = "THÔNG TIN GIÁO VIÊN";
                this.groupPanel1.Click += new System.EventHandler(this.groupPanel1_Click);
-               // 
-               // pictureBox1
-               // 
-               this.pictureBox1.Image = global::Quan_Ly_HS_GV_THPT.Properties.Resources.teacher1;
-               this.pictureBox1.Location = new System.Drawing.Point(271, 54);
-               this.pictureBox1.Name = "pictureBox1";
-               this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-               this.pictureBox1.TabIndex = 32;
-               this.pictureBox1.TabStop = false;
                // 
                // labelX8
                // 
@@ -526,6 +517,7 @@
                this.btn_SEARCH.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
                this.btn_SEARCH.TabIndex = 22;
                this.btn_SEARCH.Text = "TÌM \r\nKIẾM";
+               this.btn_SEARCH.Click += new System.EventHandler(this.btn_SEARCH_Click);
                // 
                // btn_FIX
                // 
@@ -571,6 +563,16 @@
                // 
                this.rd4.Name = "rd4";
                // 
+               // pictureBox1
+               // 
+               this.pictureBox1.Image = global::Quan_Ly_HS_GV_THPT.Properties.Resources.buttonItemTopHoSoNhanVien_Image;
+               this.pictureBox1.Location = new System.Drawing.Point(271, 54);
+               this.pictureBox1.Name = "pictureBox1";
+               this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+               this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+               this.pictureBox1.TabIndex = 32;
+               this.pictureBox1.TabStop = false;
+               // 
                // frmGiaoVien
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -582,12 +584,13 @@
                this.Text = "Giáo Viên";
                this.Load += new System.EventHandler(this.GIAOVIEN_Load);
                this.groupPanel1.ResumeLayout(false);
-               ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+               this.groupPanel1.PerformLayout();
                ((System.ComponentModel.ISupportInitialize)(this.tbx_DATE)).EndInit();
                this.panelEx1.ResumeLayout(false);
                ((System.ComponentModel.ISupportInitialize)(this.DGVGV)).EndInit();
                this.panelEx2.ResumeLayout(false);
                this.panelEx3.ResumeLayout(false);
+               ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
                this.ResumeLayout(false);
 
         }

@@ -148,6 +148,7 @@
                this.login_btn_login.TabIndex = 1;
                this.login_btn_login.Text = "Login";
                this.login_btn_login.UseVisualStyleBackColor = false;
+               this.login_btn_login.Click += new System.EventHandler(this.login_btn_login_Click);
                // 
                // login_txt_password
                // 
@@ -160,6 +161,8 @@
                this.login_txt_password.Size = new System.Drawing.Size(401, 34);
                this.login_txt_password.TabIndex = 3;
                this.login_txt_password.Text = "Password";
+               this.login_txt_password.Enter += new System.EventHandler(this.login_txt_password_Enter);
+               this.login_txt_password.Leave += new System.EventHandler(this.login_txt_password_Leave);
                // 
                // login_txt_username
                // 
@@ -172,6 +175,8 @@
                this.login_txt_username.Size = new System.Drawing.Size(401, 34);
                this.login_txt_username.TabIndex = 2;
                this.login_txt_username.Text = "Username";
+               this.login_txt_username.Enter += new System.EventHandler(this.login_txt_username_Enter);
+               this.login_txt_username.Leave += new System.EventHandler(this.login_txt_username_Leave);
                // 
                // label2
                // 
