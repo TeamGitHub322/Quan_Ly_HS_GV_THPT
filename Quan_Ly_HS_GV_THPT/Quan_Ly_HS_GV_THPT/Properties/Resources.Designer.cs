@@ -83,9 +83,29 @@ namespace Quan_Ly_HS_GV_THPT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _10225_woman_teacher_light_skin_tone_icon {
+            get {
+                object obj = ResourceManager.GetObject("10225-woman-teacher-light-skin-tone-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _return {
             get {
                 object obj = ResourceManager.GetObject("_return", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a660259e0ec5e8ce4e9927b96f8a7027 {
+            get {
+                object obj = ResourceManager.GetObject("a660259e0ec5e8ce4e9927b96f8a7027", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -726,6 +746,36 @@ namespace Quan_Ly_HS_GV_THPT.Properties {
         internal static System.Drawing.Bitmap ribbonPageGroup7_Glyph {
             get {
                 object obj = ResourceManager.GetObject("ribbonPageGroup7_Glyph", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Science_Classroom_icon {
+            get {
+                object obj = ResourceManager.GetObject("Science-Classroom-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Science_Students_icon {
+            get {
+                object obj = ResourceManager.GetObject("Science-Students-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_icon {
+            get {
+                object obj = ResourceManager.GetObject("search-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

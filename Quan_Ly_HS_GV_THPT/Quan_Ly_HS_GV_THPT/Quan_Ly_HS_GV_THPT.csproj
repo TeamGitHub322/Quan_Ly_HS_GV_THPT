@@ -126,6 +126,11 @@
     <Content Include="Images\QuanLyTHPT.jpg" />
     <Content Include="Images\student 2.png" />
     <Content Include="Images\teacher.png" />
+    <None Include="Resources\a660259e0ec5e8ce4e9927b96f8a7027.jpg" />
+    <None Include="Resources\Science-Students-icon.png" />
+    <None Include="Resources\10225-woman-teacher-light-skin-tone-icon.png" />
+    <None Include="Resources\Science-Classroom-icon.png" />
+    <None Include="Resources\search-icon.png" />
     <None Include="Resources\teacher1.png" />
     <None Include="Resources\teacher.png" />
     <None Include="Resources\student 21.png" />
