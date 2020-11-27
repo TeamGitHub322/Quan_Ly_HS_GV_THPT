@@ -124,11 +124,11 @@ namespace Quan_Ly_HS_GV_THPT.GIAOVIENDATA
 
         private void btn_BACK_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //frm_Start frm = new frm_Start();
-            //frm.ShowDialog();
-            //this.Close();
-        }
+               this.Hide();
+               frm_Start frm = new frm_Start();
+               frm.ShowDialog();
+               this.Close();
+          }
         private void xoa()
         {
             int dem = 0;
