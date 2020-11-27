@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
-namespace QuanLyTHPT.APP_DATA
+namespace Quan_Ly_HS_GV_THPT.APP_DATA
 {
    public class DATA
     {
@@ -21,7 +22,7 @@ namespace QuanLyTHPT.APP_DATA
        public DataTable SHOWDATA()
        {
 
-            con=new SqlConnection(cn.getconnect());
+            con=new SqlConnection(ConfigurationManager.ConnectionStrings["Conn"].ToString());
             con.Open();
        //    con.ConnectionString=;
            SqlDataAdapter sql=new SqlDataAdapter(path,con);

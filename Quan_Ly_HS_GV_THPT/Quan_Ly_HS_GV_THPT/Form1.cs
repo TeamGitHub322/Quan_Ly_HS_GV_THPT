@@ -34,8 +34,12 @@ namespace Quan_Ly_HS_GV_THPT
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
-        }
+               this.Hide();
+               GIAOVIENDATA.frmGiaoVien frm = new GIAOVIENDATA.frmGiaoVien();
+               frm.ShowDialog();
+               frm.Close();
+               frm.Dispose();
+          }
 
         private void button4_Click(object sender, EventArgs e)
         {
