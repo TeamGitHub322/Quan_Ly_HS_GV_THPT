@@ -34,7 +34,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar2">
+<<<<<<< Updated upstream
       <HintPath>..\..\..\..\..\Desktop\Tài liệu học tập\BT_nhom\TTN-TH248-master\DevComponents.DotNetBar2.dll</HintPath>
+=======
+      <HintPath>E:\DevComponents.DotNetBar2.dll</HintPath>
+>>>>>>> Stashed changes
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />

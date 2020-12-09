@@ -49,6 +49,7 @@ namespace Quan_Ly_HS_GV_THPT
                this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
                this.button1.UseVisualStyleBackColor = true;
                this.button1.Click += new System.EventHandler(this.button1_Click);
+               
                // 
                // button2
                // 
@@ -91,6 +92,8 @@ namespace Quan_Ly_HS_GV_THPT
                // frm_Start
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+
+               this.components = new System.ComponentModel.Container();
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
                this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
                this.BackgroundImage = global::Quan_Ly_HS_GV_THPT.Properties.Resources.QuanLyTHPT;
