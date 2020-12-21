@@ -32,13 +32,22 @@ namespace Quan_Ly_HS_GV_THPT.GIAOVIENDATA
 
           public void InsertGV(List<string> GV)
           {
-               CHECK = 0;
-               base.sql = "INSERTGIAOVIEN";
-               SP_DATA();
-               GAN_GV(GV);
-               check();
+               //CHECK = 0;
+               //base.sql = "INSERTGIAOVIEN";
+               //SP_DATA();
+               //GAN_GV(GV);
+               //check();
+               SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-6DIRH3U\SQLEXPRESS02;Initial Catalog=QL_HOCSINH_GIAOVIEN;user id=sa;password=123456;Integrated Security=True");               
+               SqlDataAdapter da = new SqlDataAdapter(cmd);//lưu dữ liệu lấy được vào đây
+               //string sSql = "INSERT INTO GiaoVien VALUES (ID_GiaoVien='"+GV[0]+"',TenGV='" + GV[1] + "',SDT=" + GV[2] + ",Email='" + GV[3] + "',GT='" + GV[4] + "',HocHam='" + GV[5] + "',HocVi='" + GV[6]="')";
+               string sSql = "INSERT INTO GiaoVien VALUES ('"+GV[0]+ "','" + GV[1] + "'," + GV[2] + ",'" + GV[3] + "','" + GV[4] + "','" + GV[5] + "','" + GV[6] + "')";
 
-        }
+               da.InsertCommand = new SqlCommand(sSql, connect);
+               connect.Open();
+               da.InsertCommand.ExecuteNonQuery();
+               connect.Close();
+               MessageBox.Show("Thêm giáo viên"+GV[0]+" thành công");
+          }
         public void UpdateGV(List<String> GV)
         {
                //CHECK = 0;
@@ -46,17 +55,36 @@ namespace Quan_Ly_HS_GV_THPT.GIAOVIENDATA
                //SP_DATA();
                //GAN_GV(GV);
                //check();
-               
-        }
+               SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-6DIRH3U\SQLEXPRESS02;Initial Catalog=QL_HOCSINH_GIAOVIEN;user id=sa;password=123456;Integrated Security=True");
+               SqlDataAdapter da = new SqlDataAdapter(cmd);//lưu dữ liệu lấy được vào đây
+               //string sSql = "INSERT INTO GiaoVien VALUES (ID_GiaoVien='"+GV[0]+"',TenGV='" + GV[1] + "',SDT=" + GV[2] + ",Email='" + GV[3] + "',GT='" + GV[4] + "',HocHam='" + GV[5] + "',HocVi='" + GV[6]="')";
+               string sSql = "UPDATE GiaoVien SET TenGV='"+GV[1]+"' WHERE ID_GiaoVien='"+GV[0]+"'";
+
+               da.InsertCommand = new SqlCommand(sSql, connect);
+               connect.Open();
+               da.InsertCommand.ExecuteNonQuery();
+               connect.Close();
+               MessageBox.Show("Cập nhật giáo viên có ID " + GV[0] + " thành công");
+          }
         public void DeleteGV(string ID)
         {
-            //base.sql = "DELETEGIAOVIEN";
-            //SP_DATA();
-            //cmd.Parameters.AddWithValue("@ID", ID);
-            //cmd.ExecuteNonQuery();
-            //cmd.Dispose();
-            //con.Close();
-        }
+               //base.sql = "DELETEGIAOVIEN";
+               //SP_DATA();
+               //cmd.Parameters.AddWithValue("@ID", ID);
+               //cmd.ExecuteNonQuery();
+               //cmd.Dispose();
+               //con.Close();
+               SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-6DIRH3U\SQLEXPRESS02;Initial Catalog=QL_HOCSINH_GIAOVIEN;user id=sa;password=123456;Integrated Security=True");
+               SqlDataAdapter da = new SqlDataAdapter(cmd);//lưu dữ liệu lấy được vào đây
+               //string sSql = "INSERT INTO GiaoVien VALUES (ID_GiaoVien='"+GV[0]+"',TenGV='" + GV[1] + "',SDT=" + GV[2] + ",Email='" + GV[3] + "',GT='" + GV[4] + "',HocHam='" + GV[5] + "',HocVi='" + GV[6]="')";
+               string sSql = "Delete from GiaoVien where ID_GiaoVien='"+ID+"'";
+
+               da.InsertCommand = new SqlCommand(sSql, connect);
+               connect.Open();
+               da.InsertCommand.ExecuteNonQuery();
+               connect.Close();
+               MessageBox.Show("Xóa giáo viên có ID " + ID + " thành công");
+          }
 
 
           public DataTable TK_THONGTIN_MA(string LISTHS)
